@@ -1,0 +1,145 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  hsl(233, 47%, 7%);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Lexend Deca', sans-serif; */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+
+}
+
+.container {
+    /* border: 2px solid red; */
+    overflow: hidden;
+    background-color:  hsl(244, 38%, 16%);
+    display: flex;
+    border-radius: 10px;
+    /* height: 446px; */
+    
+}
+
+.image-box {
+    filter: opacity(0.4) drop-shadow(0 0 0  hsl(277, 64%, 61%));
+    /* margin-bottom: -3px */
+    
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    /* vertical-align: middle */
+    display: block;
+}
+
+.image-box .mobile-image {
+    display: none;
+}
+
+.content {
+    /* padding: 70px 95px; */
+    width: 550px;
+    /* border: blue solid 4px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 15px;
+
+}
+
+.content span {
+    color:hsl(277, 64%, 61%)
+}
+
+.content .description h1{
+
+    margin-bottom: 30px;
+}
+
+.content p {
+    
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.75em;
+    font-size: 12.5px;
+    letter-spacing: 0.0em;
+    /* border: blue solid 4px; */
+    
+    
+}
+
+.data {
+    display: flex;
+    gap:50px;
+    /* border: blue solid 4px; */
+    margin-right:20px;
+    align-items: center;
+    
+}
+
+
+.data .card p {
+    text-transform: uppercase;
+    color:  hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 0.1em;
+    font-size: 10px;
+}
+
+.data .card h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.2em;
+    
+    
+}
+
+ @media only screen and (max-width: 768px) {
+
+
+    .image-box .mobile-image {
+        display: block;
+       
+    }
+
+    .image-box .desktop-image {
+        display: none;
+        
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        /* margin:30px; */
+        
+        
+        
+    }
+
+    .content {
+        /* border: 2px solid red; */
+        width: fit-content;
+        margin: 0px auto;
+        padding: 30px;
+
+    }
+
+    .data {
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    
+ 
+} 
